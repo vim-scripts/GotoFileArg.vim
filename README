@@ -1,0 +1,18 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1749
+
+GotoFileArg.vim v0.9b
+
+Mostly for those who load up VIM with a lot of files at once in the arg list.
+When jumping around in files, this allows you to jump right to a file, by a
+substring/regex of the filename.  It repositions VIM in the arg list so
+subsequent :n :N commands work from the actual location of the file.
+
+At present it also maps esc-f as the keystroke to type the filename in.
+(esc-f is alt-f / meta1-f on my system, and many others).
+
+Features:
+  * Filename match is done using "=~" so a substring / regex are fine
+  * Last pattern is remembered
+  * If the current filename matches, the search, as one would expect, begins
+at the next file, and wraps.
+
